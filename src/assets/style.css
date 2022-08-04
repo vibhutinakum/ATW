@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+.main-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+/* sidebar */
+.sidebar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  flex: 0 0 300px;
+  max-width: 300px;
+  background-color: #2d2d2d;
+  z-index: 8;
+}
+.sidebar .sidebar-wrap .logo-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.sidebar .sidebar-wrap .logo-wrap i{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.sidebar .sidebar-wrap .logo-wrap i img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sidebar .sidebar-wrap .logo-wrap span{
+  color: #e9e1cf;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.sidebar .sidebar-wrap .menu-list{
+  padding: 0 0 30px;
+}
+.sidebar .sidebar-wrap .menu-list li.active a,
+.sidebar .sidebar-wrap .menu-list li a:hover{
+  background-color: #e5d5a9;
+  color: #6b6969;
+}
+.sidebar .sidebar-wrap .menu-list li a{
+  padding: 15px 30px;
+  font-size: 30px;
+  line-height: 1;
+  color: #e9e1cf;
+  display: block;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+/* header */
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  border-bottom: 1px solid #000000;
+}
+.header .header-inner{
+  background-color: #fff;
+  padding: 25px;
+}
+.header .header-inner .title{
+  color: #000000;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  display: block;
+}
+
+/* right block */
+.right-content-wrap{
+  flex: 0 0 calc(100% - 300px);
+  max-width: calc(100% - 300px);
+  font-family: 'Roboto Mono', monospace;
+  height: 100vh;
+  overflow: auto;
+}
+.right-content-wrap .right-content-inner{
+  padding: 20px 30px;
+}
+.right-content-wrap .nav-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 40px;
+}
+.right-content-wrap .nav-wrap .left-wrap{
+  flex: 1;
+  text-align: center;
+}
+.right-content-wrap .data-block-outer{
+  background-color: #f8f8f0;
+  padding: 50px;
+  position: relative;
+}
+.right-content-wrap .data-block-outer .info{
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.right-content-wrap .data-block{
+  background-color: #fff;
+  padding: 10px;
+}
+.grid-block > .upper-block{
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 5px solid #6b6969;
+}
+.grid-block > .upper-block .column{
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.grid-block .column:not(:last-child){
+  border-right: 5px solid #6b6969;
+}
+.grid-block > .lower-block{
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-block > .lower-block .column{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.grid-block .content-block{
+  padding: 20px 10px;
+}
+.grid-block .content-block .title{
+  font-size: 16px;
+  line-height: 1.3;
+  display: inline-flex;
+  white-space: normal;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #6b6969;
+  color: #ffffff;
+  min-height: 60px;
+  margin: 0 0 15px;
+}
+.grid-block .content-block .content{
+  background-color: #e5d5a9;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+}
+.grid-block .content-block .content ol{
+  list-style-position: outside;
+  list-style-type: decimal;
+  padding-left: 29px;
+}
+.grid-block .content-block .content ol li{
+  font-size: 16px;
+  line-height: 1.3;
+  color: #000000;
+}
+.grid-block .upper{
+  border-bottom: 5px solid transparent;
+}
+.grid-block .upper.border-bottom{
+  border-bottom: 5px solid #6b6969 !important;
+}
+.grid-block > .lower-block .content-block .content{
+  min-height: 100px;
+} 
